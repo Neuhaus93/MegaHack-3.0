@@ -19,7 +19,7 @@ const Home = () => {
       <View style={styles.form}>
         <Text style={styles.label}>E-mail</Text>
         <TextInput
-          style={styles.input}
+          style={{ ...styles.input, marginBottom: 12 }}
           placeholder='exemplo@wilsonsons.com'
           autoCorrect={false}
           autoCapitalize='none'
@@ -61,10 +61,10 @@ const styles = StyleSheet.create({
   label: {
     textAlign: 'left',
     fontSize: 16,
-    // font: Medium 11px/16px Poppins;
     letterSpacing: 0,
+    fontFamily: 'Poppins_400Regular',
     color: '#3B4F99',
-    marginBottom: 12,
+    marginBottom: 8,
   },
 
   input: {
@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     letterSpacing: 0,
     color: '#515C6F',
+    fontFamily: 'Poppins_400Regular',
   },
 
   button: {
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     textAlign: 'center',
     color: '#FFF',
-    // fontFamily: 'Roboto_500Medium',
+    fontFamily: 'Poppins_600SemiBold',
     fontSize: 16,
   },
 });
