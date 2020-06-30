@@ -5,6 +5,8 @@ import { Redirect } from "react-router-dom";
 import { DefaultLayout } from "./layouts";
 
 // Route Views
+import Courses from "./views/Courses";
+import UserProfile from "./views/UserProfile";
 import Errors from "./views/Errors";
 
 export default [
@@ -13,6 +15,16 @@ export default [
     exact: true,
     layout: DefaultLayout,
     component: () => <Redirect to="/errors" />,
+  },
+  {
+    path: "/courses",
+    layout: DefaultLayout,
+    component: Courses,
+  },
+  {
+    path: "/user-profile",
+    layout: DefaultLayout,
+    component: UserProfile,
   },
   {
     path: "/errors",

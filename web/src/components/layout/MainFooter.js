@@ -39,7 +39,7 @@ MainFooter.propTypes = {
 
 MainFooter.defaultProps = {
   contained: false,
-  copyright: "Copyright © 2018 Maritmo",
+  copyright: "Copyright © 2020 Maritmo",
   menuItems: [
     {
       title: "Home",

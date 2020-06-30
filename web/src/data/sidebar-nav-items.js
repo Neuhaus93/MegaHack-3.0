@@ -8,9 +8,9 @@ export default function () {
       htmlAfter: "",
     },
     {
-      title: "Blog Posts",
+      title: "Cursos",
       htmlBefore: '<i class="material-icons">vertical_split</i>',
-      to: "/blog-posts",
+      to: "/courses",
       // to: "/#",
     },
     {
@@ -19,23 +19,23 @@ export default function () {
       // to: "/add-new-post",
       to: "/#",
     },
-    {
-      title: "Forms & Components",
-      htmlBefore: '<i class="material-icons">view_module</i>',
-      // to: "/components-overview",
-      to: "/#",
-    },
-    {
-      title: "Tables",
-      htmlBefore: '<i class="material-icons">table_chart</i>',
-      // to: "/tables",
-      to: "/#",
-    },
+    // {
+    //   title: "Forms & Components",
+    //   htmlBefore: '<i class="material-icons">view_module</i>',
+    //   // to: "/components-overview",
+    //   to: "/#",
+    // },
+    // {
+    //   title: "Tables",
+    //   htmlBefore: '<i class="material-icons">table_chart</i>',
+    //   // to: "/tables",
+    //   to: "/#",
+    // },
     {
       title: "User Profile",
       htmlBefore: '<i class="material-icons">person</i>',
-      // to: "/user-profile-lite",
-      to: "/#",
+      to: "/user-profile",
+      // to: "/#",
     },
     {
       title: "Errors",
