@@ -12,6 +12,11 @@ export default [
     path: "/",
     exact: true,
     layout: DefaultLayout,
+    component: () => <Redirect to="/errors" />,
+  },
+  {
+    path: "/errors",
+    layout: DefaultLayout,
     component: Errors,
   },
 ];
