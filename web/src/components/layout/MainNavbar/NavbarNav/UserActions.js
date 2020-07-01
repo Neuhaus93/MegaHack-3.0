@@ -25,7 +25,12 @@ const UserActions = () => {
           src={require("../../../../assets/images/avatar.png")}
           alt="User Avatar"
         />{" "}
-        <span className="d-none d-md-inline-block">Lucas Neuhaus</span>
+        <span
+          className="d-none d-md-inline-block"
+          style={{ cursor: "default" }}
+        >
+          Lucas Neuhaus
+        </span>
       </DropdownToggle>
       <Collapse tag={DropdownMenu} right small open={visible}>
         <DropdownItem tag={Link} to="user-profile">
@@ -41,7 +46,7 @@ const UserActions = () => {
           <i className="material-icons">&#xE896;</i> Transactions
         </DropdownItem> */}
         <DropdownItem divider />
-        <DropdownItem tag={Link} to="/" className="text-danger">
+        <DropdownItem tag={Link} to="/login" className="text-danger">
           <i className="material-icons text-danger">&#xE879;</i> Logout
         </DropdownItem>
       </Collapse>

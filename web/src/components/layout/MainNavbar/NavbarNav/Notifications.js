@@ -9,7 +9,10 @@ const Notifications = () => {
   }
 
   return (
-    <NavItem className="border-right dropdown notifications">
+    <NavItem
+      className="border-right dropdown notifications"
+      style={{ cursor: "default" }}
+    >
       <NavLink
         className="nav-link-icon text-center"
         onClick={toggleNotifications}
@@ -25,15 +28,19 @@ const Notifications = () => {
         <DropdownItem>
           <div className="notification__icon-wrapper">
             <div className="notification__icon">
-              <i className="material-icons">&#xE6E1;</i>
+              <i className="material-icons">school</i>
             </div>
           </div>
           <div className="notification__content">
-            <span className="notification__category">Analytics</span>
+            <span className="notification__category">
+              Novo curso obrigatório
+            </span>
             <p>
-              Your website’s active users count increased by{" "}
-              <span className="text-success text-semibold">28%</span> in the
-              last week. Great job!
+              O novo curso obrigatório{" "}
+              <span className="text-success text-semibold">
+                GESTÃO DE MAQUINÁRIOS 3
+              </span>{" "}
+              in the foi adicionado. Corra para concluir!
             </p>
           </div>
         </DropdownItem>

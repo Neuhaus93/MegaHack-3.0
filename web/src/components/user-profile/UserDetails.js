@@ -38,7 +38,7 @@ const UserDetails = ({ userDetails }) => {
               value={userDetails.performanceReportValue}
             >
               <span className="progress-value">
-                {userDetails.performanceReportValue}%
+                {userDetails.performanceReportValue * 10} / 1000
               </span>
             </Progress>
           </div>
@@ -68,7 +68,7 @@ UserDetails.defaultProps = {
     avatar: require("../../assets/images/avatar.png"),
     jobTitle: "CEO da porra toda",
     performanceReportTitle: "Capitão",
-    performanceReportValue: 100,
+    performanceReportValue: 37,
     metaTitle: "Sobre mim",
     metaValue:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?",

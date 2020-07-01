@@ -1,0 +1,4 @@
+const INPUT_WIDTH = 400;
+const BUTTON_WIDTH = 110;
+
+export { INPUT_WIDTH, BUTTON_WIDTH };

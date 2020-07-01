@@ -2,7 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Navbar, NavbarBrand } from "shards-react";
 
+import { Dispatcher, Constants } from "../../../flux";
+
 const SidebarMainNavbar = ({ hideLogoText }) => {
+  function handleToggleSidebar() {
+    Dispatcher.dispatch({
+      actionType: Constants.TOGGLE_SIDEBAR,
+    });
+  }
+
   return (
     <div className="main-navbar">
       <Navbar
@@ -30,7 +38,7 @@ const SidebarMainNavbar = ({ hideLogoText }) => {
         {/* eslint-disable-next-line */}
         <a
           className="toggle-sidebar d-sm-inline d-md-none d-lg-none"
-          onClick={() => {}}
+          onClick={handleToggleSidebar}
         >
           <i className="material-icons">&#xE5C4;</i>
         </a>
