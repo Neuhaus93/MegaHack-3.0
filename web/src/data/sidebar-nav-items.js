@@ -1,21 +1,21 @@
 export default function () {
   return [
     {
-      title: "Blog Dashboard",
+      title: "Game",
       // to: "/blog-overview",
       to: "/errors",
-      htmlBefore: '<i class="material-icons">edit</i>',
+      htmlBefore: '<i class="material-icons">leaderboard</i>',
       htmlAfter: "",
     },
     {
-      title: "Cursos",
-      htmlBefore: '<i class="material-icons">vertical_split</i>',
+      title: "Treinamentos",
+      htmlBefore: '<i class="material-icons">engineering</i>',
       to: "/courses",
       // to: "/#",
     },
     {
-      title: "Add New Post",
-      htmlBefore: '<i class="material-icons">note_add</i>',
+      title: "Manuais",
+      htmlBefore: '<i class="material-icons">menu_book</i>',
       // to: "/add-new-post",
       to: "/#",
     },
@@ -32,16 +32,10 @@ export default function () {
     //   to: "/#",
     // },
     {
-      title: "User Profile",
-      htmlBefore: '<i class="material-icons">person</i>',
+      title: "Social",
+      htmlBefore: '<i class="material-icons">people</i>',
       to: "/user-profile",
       // to: "/#",
-    },
-    {
-      title: "Errors",
-      htmlBefore: '<i class="material-icons">error</i>',
-      // to: "/errors",
-      to: "/#",
     },
   ];
 }

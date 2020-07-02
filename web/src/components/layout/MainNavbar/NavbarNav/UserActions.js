@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import {
   Dropdown,
@@ -10,7 +11,11 @@ import {
   NavLink,
 } from "shards-react";
 
-const UserActions = () => {
+import UserProps from "../../../../data/user-props";
+
+const UserActions = ({ userProps }) => {
+  const { name, avatar } = userProps;
+
   const [visible, setVisible] = useState(false);
 
   function toggleUserActions() {
@@ -22,21 +27,21 @@ const UserActions = () => {
       <DropdownToggle caret tag={NavLink} className="text-nowrap px-3">
         <img
           className="user-avatar rounded-circle mr-2"
-          src={require("../../../../assets/images/avatar.png")}
+          src={avatar}
           alt="User Avatar"
         />{" "}
         <span
           className="d-none d-md-inline-block"
           style={{ cursor: "default" }}
         >
-          Lucas Neuhaus
+          {name}
         </span>
       </DropdownToggle>
       <Collapse tag={DropdownMenu} right small open={visible}>
         <DropdownItem tag={Link} to="user-profile">
           <i className="material-icons">&#xE7FD;</i> Perfil
         </DropdownItem>
-        <DropdownItem tag={Link} to="edit-user-profile">
+        <DropdownItem tag={Link} to="edit-profile">
           <i className="material-icons">&#xE8B8;</i> Editar Perfil
         </DropdownItem>
         <DropdownItem tag={Link} to="file-manager-list">
@@ -52,6 +57,17 @@ const UserActions = () => {
       </Collapse>
     </NavItem>
   );
+};
+
+UserActions.propTypes = {
+  /**
+   * The user details object.
+   */
+  userProps: PropTypes.object,
+};
+
+UserActions.defaultProps = {
+  userProps: UserProps,
 };
 
 export default UserActions;

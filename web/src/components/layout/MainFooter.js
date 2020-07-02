@@ -39,26 +39,18 @@ MainFooter.propTypes = {
 
 MainFooter.defaultProps = {
   contained: false,
-  copyright: "Copyright © 2020 Maritmo",
+  copyright: "© 2020 Marítimo",
   menuItems: [
     {
-      title: "Home",
+      title: "Sobre",
       to: "#",
     },
     {
-      title: "Services",
+      title: "Termos",
       to: "#",
     },
     {
-      title: "About",
-      to: "#",
-    },
-    {
-      title: "Products",
-      to: "#",
-    },
-    {
-      title: "Blog",
+      title: "Contato",
       to: "#",
     },
   ],

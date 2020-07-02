@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardHeader,
@@ -9,7 +10,9 @@ import {
   Progress,
 } from "shards-react";
 
-const UserDetails = ({ userDetails }) => {
+import UserProps from "../../data/user-props";
+
+const UserDetails = ({ userDetails, showEditButton }) => {
   return (
     <Card small className="mb-4 pt-3">
       <CardHeader className="border-bottom text-center">
@@ -19,13 +22,24 @@ const UserDetails = ({ userDetails }) => {
             src={userDetails.avatar}
             alt={userDetails.name}
             width="110"
+            style={{ boxShadow: "0px 0px 4px black" }}
           />
         </div>
         <h4 className="mb-0">{userDetails.name}</h4>
         <span className="text-muted d-block mb-2">{userDetails.jobTitle}</span>
-        <Button pill outline size="sm" className="mb-2">
-          <i className="material-icons mr-1">create</i> Editar Perfil
-        </Button>
+
+        {showEditButton ? (
+          <Button
+            tag={Link}
+            to="/edit-profile"
+            pill
+            outline
+            size="sm"
+            className="mb-2"
+          >
+            <i className="material-icons mr-1">create</i> Editar Perfil
+          </Button>
+        ) : null}
       </CardHeader>
       <ListGroup flush>
         <ListGroupItem className="px-4">
@@ -59,20 +73,12 @@ UserDetails.propTypes = {
    * The user details object.
    */
   userDetails: PropTypes.object,
+  showEditButton: PropTypes.bool,
 };
 
 UserDetails.defaultProps = {
-  userDetails: {
-    name: "Lucas Neuhaus",
-    // avatar: require("./../../images/avatar.png"),
-    avatar: require("../../assets/images/avatar.png"),
-    jobTitle: "CEO da porra toda",
-    performanceReportTitle: "Capitão",
-    performanceReportValue: 37,
-    metaTitle: "Sobre mim",
-    metaValue:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?",
-  },
+  userDetails: UserProps,
+  showEditButton: true,
 };
 
 export default UserDetails;

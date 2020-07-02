@@ -1,4 +1,4 @@
 import DefaultLayout from "./Default";
-import BlankLayout from "./Blank";
+import AuthLayout from "./Auth";
 
-export { DefaultLayout, BlankLayout };
+export { DefaultLayout, AuthLayout };
