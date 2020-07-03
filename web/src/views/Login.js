@@ -8,7 +8,9 @@ const Auth = () => {
     <>
       <AuthHeader isLoginIn={true} />
 
-      <LoginForm />
+      <div className="mt-10">
+        <LoginForm />
+      </div>
     </>
   );
 };

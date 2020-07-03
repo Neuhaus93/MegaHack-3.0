@@ -26,13 +26,10 @@ const SidebarMainNavbar = ({ hideLogoText }) => {
             <img
               id="main-logo"
               className="d-inline-block align-top mr-1"
-              style={{ maxWidth: "60px" }}
-              src={require("../../../assets/images/logo.svg")}
+              style={{ maxWidth: "115px" }}
+              src={require("../../../assets/logos/logo_navy_sm.png")}
               alt="Marítimo"
             />
-            {!hideLogoText && (
-              <span className="d-none d-md-inline ml-1">Marítimo</span>
-            )}
           </div>
         </NavbarBrand>
         {/* eslint-disable-next-line */}

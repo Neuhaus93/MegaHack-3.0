@@ -8,11 +8,18 @@ const AuthLayout = ({ children }) => (
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "90vh",
+        height: "94vh",
         flexFlow: "column",
       }}
     >
-      <div
+      <img
+        id="main-logo"
+        className="d-inline-block align-top mr-1 mb-4"
+        style={{ maxWidth: "285px" }}
+        src={require("../assets/logos/logo_navy.png")}
+        alt="Marítimo"
+      />
+      {/* <div
         style={{
           display: "flex",
           alignItems: "center",
@@ -27,11 +34,11 @@ const AuthLayout = ({ children }) => (
           alt="Marítimo"
         />
         <h2 className="ml-3 pb-2">Marítimo</h2>
-      </div>
+      </div> */}
       <Card
         style={{
           height: 530,
-          width: 450,
+          width: 440,
         }}
       >
         {children}

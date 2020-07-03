@@ -1,9 +1,9 @@
 export default function () {
   return [
     {
-      title: "Game",
+      title: "Progresso",
       // to: "/blog-overview",
-      to: "/errors",
+      to: "/progress",
       htmlBefore: '<i class="material-icons">leaderboard</i>',
       htmlAfter: "",
     },
@@ -17,20 +17,8 @@ export default function () {
       title: "Manuais",
       htmlBefore: '<i class="material-icons">menu_book</i>',
       // to: "/add-new-post",
-      to: "/#",
+      to: "/manuals",
     },
-    // {
-    //   title: "Forms & Components",
-    //   htmlBefore: '<i class="material-icons">view_module</i>',
-    //   // to: "/components-overview",
-    //   to: "/#",
-    // },
-    // {
-    //   title: "Tables",
-    //   htmlBefore: '<i class="material-icons">table_chart</i>',
-    //   // to: "/tables",
-    //   to: "/#",
-    // },
     {
       title: "Social",
       htmlBefore: '<i class="material-icons">people</i>',

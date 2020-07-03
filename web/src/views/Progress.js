@@ -2,14 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
-import UserDetails from "../components/user-profile/UserDetails";
+import BadgesContainer from "../components/game/BadgesContainer";
 
-const UserProfile = () => {
+const Progress = () => {
   return (
     <Container fluid className="main-content-container px-4">
       <Row noGutters className="page-header py-4">
         <PageTitle
-          title="Perfil"
+          title="Progresso"
           subtitle="Overview"
           md="12"
           className="ml-sm-auto mr-sm-auto"
@@ -17,11 +17,11 @@ const UserProfile = () => {
       </Row>
       <Row>
         <Col lg="4">
-          <UserDetails />
+          <BadgesContainer />
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default UserProfile;
+export default Progress;
