@@ -5,7 +5,6 @@ import PageTitle from "../components/common/PageTitle";
 import { CourseListOne } from "../data/course-list";
 
 const Courses = () => {
-  // backgroundImage: require("../assets/images/"),
   return (
     <Container fluid className="main-content-container px-4">
       {/* Page Header */}
@@ -36,7 +35,7 @@ const Courses = () => {
               </div>
               <CardBody>
                 {/* <h6 className="card-title"> */}
-                <a href="#" className="text-fiord-blue">
+                <a href="/courses" className="text-fiord-blue">
                   {post.title}
                 </a>
                 {/* </h6> */}

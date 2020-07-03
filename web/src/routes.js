@@ -14,6 +14,9 @@ import Errors from "./views/Errors";
 import Login from "./views/Login";
 import Register from "./views/Register";
 
+// Course
+import CoursePage from "./views/CoursePage";
+
 export default [
   {
     path: "/",
@@ -45,6 +48,12 @@ export default [
     path: "/manuals",
     layout: DefaultLayout,
     component: Manuals,
+  },
+  // CoursePage
+  {
+    path: "/course/1",
+    layout: DefaultLayout,
+    component: CoursePage,
   },
   {
     path: "/errors",

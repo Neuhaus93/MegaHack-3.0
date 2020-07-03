@@ -24,15 +24,15 @@ const UserActions = ({ userProps }) => {
 
   return (
     <NavItem tag={Dropdown} caret toggle={toggleUserActions}>
-      <DropdownToggle caret tag={NavLink} className="text-nowrap px-3">
+      <DropdownToggle caret tag={NavLink} className="text-nowrap pl-3">
         <img
           className="user-avatar rounded-circle mr-2"
           src={avatar}
           alt="User Avatar"
         />{" "}
         <span
-          className="d-none d-md-inline-block"
-          style={{ cursor: "default" }}
+          className="d-none d-md-inline-block mt-2"
+          style={{ cursor: "default", textTransform: "uppercase" }}
         >
           {name}
         </span>
