@@ -2,6 +2,13 @@ import React from "react";
 import { Container, Row, Col, Card, CardBody, Badge } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
+import ListCard from "../components/common/ListCard";
+import ListCardItem from "../components/common/ListCardItem";
+import BadgeInProgress from "../components/game/BadgeInProgress";
+
+import courseList from "../data/popular-courses";
+
+import badgesInProgress from "../data/badges-in-progress";
 import { CourseListOne } from "../data/course-list";
 
 const Courses = () => {
@@ -11,7 +18,7 @@ const Courses = () => {
       <Row noGutters className="page-header py-4">
         <PageTitle
           sm="4"
-          title="Cursos"
+          title="Trilhas"
           subtitle="Components"
           className="text-sm-left"
         />
@@ -33,9 +40,9 @@ const Courses = () => {
                   {post.category}
                 </Badge>
               </div>
-              <CardBody>
+              <CardBody className="py-3">
                 {/* <h6 className="card-title"> */}
-                <a href="/courses" className="text-fiord-blue">
+                <a href={post.accessRoute} className="text-fiord-blue">
                   {post.title}
                 </a>
                 {/* </h6> */}
@@ -45,6 +52,16 @@ const Courses = () => {
             </Card>
           </Col>
         ))}
+      </Row>
+      <Row>
+        <Col lg="4" md="6" sm="12">
+          <ListCard
+            listTitle="Cursos mais procurados"
+            listTitleIcon={<i className="material-icons">star</i>}
+            ListItem={ListCardItem}
+            listArrayOfItems={courseList}
+          />
+        </Col>
       </Row>
     </Container>
   );

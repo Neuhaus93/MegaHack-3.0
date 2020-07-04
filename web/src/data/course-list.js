@@ -9,6 +9,7 @@ const CourseListOne = [
     body:
       "However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. But in for determine what would see...",
     date: "28 February 2019",
+    accessRoute: "/course/1",
   },
   {
     backgroundImage: require("../assets/courses-images/1.jpg"),
@@ -20,6 +21,7 @@ const CourseListOne = [
     body:
       "Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...",
     date: "29 February 2019",
+    accessRoute: "/course/1",
   },
   {
     backgroundImage: require("../assets/courses-images/2.jpg"),
@@ -31,6 +33,7 @@ const CourseListOne = [
     body:
       "Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...",
     date: "29 February 2019",
+    accessRoute: "/course/1",
   },
   {
     backgroundImage: require("../assets/courses-images/3.jpg"),
@@ -42,6 +45,7 @@ const CourseListOne = [
     body:
       "How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved ready road market resolution...",
     date: "29 February 2019",
+    accessRoute: "/course/1",
   },
 ];
 
